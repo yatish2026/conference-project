@@ -1,0 +1,181 @@
+.registration-page {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.registration-page p{
+    color: black;
+    font-size: 18px;
+}
+.registration-page .section-title {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.navbarabout{
+    width: 100%;
+    background-color:#7cb518;
+    padding: 20px 0px;
+    position: relative; 
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-right: 140px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background:orangered;
+    border-radius: 5px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background:#7cb518;
+    list-style: none;
+    margin: 10px;
+    /* color: black; */
+}
+.dropdown-menu ul li{
+    padding: 10px;
+    background-color: orange;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    padding: 10px 10px;
+}
+.registration-headingabout {
+    /* text-align: center; */
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to right, #f0f0f0,#7cb518);
+    color: orangered;
+}
+.registration-headingabout h2{
+    margin-left: 9vw;
+}
+.about {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.about p{
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+.about .section-title {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.headabout{
+    margin: 30px 0px;
+    color:#7cb518;
+}
+h1 {
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Animation when elements become visible */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* responsive */
+/* Responsive Registration Page */
+@media screen and (max-width: 1024px) {
+    .registration-page, .about {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .registration-headingabout h2 {
+        margin-left: 5vw;
+    }
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .navbarabout {
+        display: none; /* Hide navbar on small screens */
+    }
+}
+
+/* Responsive About Section */
+@media screen and (max-width: 768px) {
+    .about p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .about .section-title {
+        font-size: 22px;
+    }
+
+    .headabout {
+        font-size: 24px;
+    }
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .about p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+
+/* Responsive Registration Heading */
+@media screen and (max-width: 768px) {
+    .registration-headingabout h2 {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+  .conference-details p{
+    text-align: center;
+  }
+}
+
+ 
