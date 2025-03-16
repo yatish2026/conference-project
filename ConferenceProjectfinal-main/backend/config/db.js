@@ -28,8 +28,10 @@ const connectDB = async (MONGO_URI = getMongoURI()) => {
     try {
         await mongoose.connect(MONGO_URI, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            strictQuery: false, // Prevent deprecation warnings
+            useUnifiedTopology: true
+        
+
+            
         });
         console.log(`✅ MongoDB Connected: ${MONGO_URI.includes("localhost") ? "Local" : "Atlas"}`);
     } catch (err) {
