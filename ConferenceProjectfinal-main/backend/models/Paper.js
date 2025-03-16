@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const PaperSchema = new mongoose.Schema({
+const paperSchema = new mongoose.Schema({
     name: String,
     institution: String,
     title: String,
@@ -12,9 +12,7 @@ const PaperSchema = new mongoose.Schema({
     filename: String,
     mimetype: String,
     size: Number,
-    fileBase64: String // Storing the file as Base64
+    filePath: String // Store file location instead of Base64
 });
 
-const Paper = mongoose.model("Paper", PaperSchema);
-
-module.exports = Paper;
+module.exports = mongoose.model("Paper", paperSchema);
